@@ -7,6 +7,7 @@
     "email": "clement.renaud@gmail.com",
     "url": "https://www.clementrenaud.com/"
   },
+  "main": "src/index.js",
   "homepage": "https://github.com/clemsos/metalsmith-scan-images",
   "repository": {
     "type": "git",
