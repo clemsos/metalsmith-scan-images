@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "metalsmith-scan-images",
+  "description": "A metalsmith plugin that scan all images in subfolders and add it to metadata.",
+  "author": {
+    "name": "Clément Renaud",
+    "email": "clement.renaud@gmail.com",
+    "url": "https://www.clementrenaud.com/"
+  },
+  "homepage": "https://github.com/clemsos/metalsmith-scan-images",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clemsos/metalsmith-scan-images"
+  },
+   "dependencies": {
+    "debug": "~0.7.4",
+    "minimatch": "^0.2.14"
+  }
+}
