@@ -17,4 +17,3 @@ var paths = require('metalsmith-paths');
 var metalsmith = new Metalsmith(__dirname)
   .use(paths( 'content/projects/**/*.md' ));
 ```
-
