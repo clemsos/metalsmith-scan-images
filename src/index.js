@@ -15,7 +15,7 @@ module.exports = function plugin (options) {
   return function (files, metalsmith, done) {
     setImmediate(done)
 
-     var authorized_exts = ["jpg", "svg", "png", "gif"];
+     var authorized_exts = ["jpg", "svg", "png", "gif", "JPG", "SVG", "PNG", "GIF", ];
 
     Object.keys(files).forEach(function (file) {
       debug('process file: %s', file)
