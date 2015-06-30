@@ -11,7 +11,6 @@ var matcher = require('minimatch');
  */
 
 module.exports = function plugin (options) {
-  console.log(options);
 
   return function (files, metalsmith, done) {
     setImmediate(done)
@@ -25,6 +24,7 @@ module.exports = function plugin (options) {
         debug('[node >= 0.11.15] using path.parse')
         files[file].path = path.parse(file)
       } else {
+        
         // add file path info
         var extname = path.extname(file)
 
@@ -41,10 +41,7 @@ module.exports = function plugin (options) {
       if(matcher(file, options) ){
 
           var p = path.join(metalsmith.source(),path.dirname(file)) ;
-          console.log(p);
           fs.readdir(p, function (err, dirfiles) {
-            
-              console.log(dirfiles);
               if (err) return err
               for (var i = 0; i < dirfiles.length; i++) {
                 var dirfile = dirfiles[i];
