@@ -16,10 +16,10 @@ npm install --save metalsmith-scan-images
 
 ```js
 var Metalsmith = require('metalsmith');
-var paths = require('metalsmith-paths');
+var images = require("metalsmith-scan-images");
 
 var metalsmith = new Metalsmith(__dirname)
-  .use(paths( 'content/projects/**/*.md' ));
+  .use(images( 'content/**/**/index.html' ))
 ```
 ## Use it
 
