@@ -4,6 +4,7 @@ A metalsmith plugin to easily create image galleries.
 
 This plugin will scan all images included in folders following a pattern (ex ```'content/projects/**/*.md'```) and add an array of paths called ```images``` to each post metadata. 
 
+Supported extensions : ```"jpg", "svg", "png", "gif", "JPG", "SVG", "PNG", "GIF"```
 
 ## Install
 
