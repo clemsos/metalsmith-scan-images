@@ -1,6 +1,7 @@
 # Metalsmith Scan Images
 
-A metalsmith plugin that scan all images in subfolders and add it to metadata.
+A metalsmith plugin to easily create image galleries. 
+The plugin scan all images in subfolders following a pattern and add it to metadata, so you can display it in a template afterwards.
 
 ## Install
 
