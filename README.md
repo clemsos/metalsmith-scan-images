@@ -23,16 +23,16 @@ var metalsmith = new Metalsmith(__dirname)
 ```
 ## Use it
 
-A basic example of an image gallery
+A basic example of template for an image gallery
 
 ```html
-    <div id="gallery" class="nine columns">
-        <ul >
-        {{#each images }}
-            <li>
-                <img src="{{this}}" alt="">
-            </li>
-        {{/each}}
-        </ul>
-    </div>
+<div id="gallery" class="nine columns">
+    <ul >
+    {{#each images }}
+        <li>
+            <img src="{{this}}" alt="">
+        </li>
+    {{/each}}
+    </ul>
+</div>
 ```
