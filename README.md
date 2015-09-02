@@ -1,7 +1,9 @@
 # Metalsmith Scan Images
 
 A metalsmith plugin to easily create image galleries. 
-The plugin scan all images in subfolders following a pattern and add it to metadata, so you can display it in a template afterwards.
+
+This plugin will scan all images included in folders following a pattern (ex ```'content/projects/**/*.md'```) and add an array of paths called ```images``` to each post metadata. 
+
 
 ## Install
 
@@ -17,4 +19,19 @@ var paths = require('metalsmith-paths');
 
 var metalsmith = new Metalsmith(__dirname)
   .use(paths( 'content/projects/**/*.md' ));
+```
+## Use it
+
+A basic example of an image gallery
+
+```html
+    <div id="gallery" class="nine columns">
+        <ul >
+        {{#each images }}
+            <li>
+                <img src="{{this}}" alt="">
+            </li>
+        {{/each}}
+        </ul>
+    </div>
 ```
